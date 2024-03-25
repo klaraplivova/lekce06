@@ -20,3 +20,32 @@ do 540px - 1 obrázek na řádku (= mobil)
 > 1000px - 6 obrázky vedle sebe
 */
 
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 540px) {
+    .foto {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 660px) {
+    .foto {
+        flex-basis: 33%;
+    }
+}
+
+@media (min-width: 880px) {
+    .foto {
+        flex-basis: 25%;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .foto {
+        flex-basis: 15%;
+    }
+}
