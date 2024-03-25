@@ -1,0 +1,15 @@
+.obdelnik {
+    background-color: green;
+}
+
+@media (min-width: 600px) {
+    .obdelnik {
+        background-color: red;
+    }
+}
+
+@media (min-width: 800px) {
+    .obdelnik {
+        background-color: aqua;
+    }
+}
