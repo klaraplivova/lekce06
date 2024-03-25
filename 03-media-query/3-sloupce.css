@@ -2,5 +2,21 @@
 Nastav CSS pro třídu .kontejner a .sloupec tak,
 aby na obrazovce širší než 600px byly všechny 3 obdélníky vedle sebe.
 
+flex-grow, flex-shrink, flex-basis
 Go, girl!
 */
+
+.kontejner {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .kontejner {
+        flex-direction: row;
+    }
+    .sloupec {
+        width: 100%;
+    }
+}
+
